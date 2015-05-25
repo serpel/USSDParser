@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class USSD {
+public class USSDParser {
 
     private static String startmsg = "displayMMIComplete";
     private static String endmsg = "MMI code has finished running";
@@ -29,11 +29,11 @@ public class USSD {
     private boolean found = false;
     private long timeLog = -1; // timestamp of the found log
 
-    public USSD() {
+    public USSDParser() {
         this(3000, 3000);
     }
 
-    public USSD(long before_creation, long after_creation) {
+    public USSDParser(long before_creation, long after_creation) {
         before = before_creation;
         after = after_creation;
     }
@@ -188,4 +188,5 @@ public class USSD {
 
         return Uri.parse(uriString);
     }
+
 }

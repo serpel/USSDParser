@@ -16,7 +16,7 @@ public class ResultActivity extends ActionBarActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MainActivity.USSD_MESSAGE);
 
         TextView textView = (TextView) findViewById(R.id.textViewResult);
         textView.append(message);
