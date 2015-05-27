@@ -85,12 +85,12 @@ Compilation events (10 events):
 Event: 0.400 Thread 0x000000001492c000 nmethod 378 0x0000000002682790 code [0x00000000026828c0, 0x0000000002682978]
 Event: 0.401 Thread 0x000000001492f000  380       3       com.android.dx.rop.cst.CstInteger::getValue (5 bytes)
 Event: 0.401 Thread 0x000000001492f000 nmethod 380 0x00000000026823d0 code [0x0000000002682520, 0x0000000002682710]
-Event: 0.401 Thread 0x000000001492f000  381       3       com.android.dx.util.Bits::set (19 bytes)
+Event: 0.401 Thread 0x000000001492f000  381       3       com.android.dx.com.intelisys.ussdparser.util.Bits::set (19 bytes)
 Event: 0.401 Thread 0x000000001492f000 nmethod 381 0x0000000002682010 code [0x0000000002682160, 0x00000000026822d0]
 Event: 0.401 Thread 0x000000001492f000  382       1       com.android.dx.rop.cst.CstLiteral32::getIntBits (5 bytes)
 Event: 0.401 Thread 0x000000001492f000 nmethod 382 0x0000000002681d50 code [0x0000000002681ea0, 0x0000000002681fb0]
 Event: 0.401 Thread 0x000000001492f000  383   !   3       com.android.dx.cf.code.BytecodeArray::parseInstruction (2764 bytes)
-Event: 0.402 Thread 0x000000001492c000  388       4       com.android.dx.util.MutabilityControl::throwIfImmutable (18 bytes)
+Event: 0.402 Thread 0x000000001492c000  388       4       com.android.dx.com.intelisys.ussdparser.util.MutabilityControl::throwIfImmutable (18 bytes)
 Event: 0.402 Thread 0x000000001492c000 nmethod 388 0x00000000026208d0 code [0x0000000002620a00, 0x0000000002620a78]
 
 GC Heap History (10 events):
@@ -204,7 +204,7 @@ Deoptimization events (0 events):
 No events
 
 Internal exceptions (2 events):
-Event: 0.040 Thread 0x000000000237e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab0f6c0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\srcÞJŸ`¶†¤?
+Event: 0.040 Thread 0x000000000237e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab0f6c0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\srcï¿½Jï¿½`ï¿½ï¿½ï¿½?
 Event: 0.040 Thread 0x000000000237e000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000eab0f9b8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\prims\jn
 
 Events (10 events):
@@ -214,8 +214,8 @@ Event: 0.336 Thread 0x000000000237e000 DEOPT PACKING pc=0x000000000261cad5 sp=0x
 Event: 0.336 Thread 0x000000000237e000 DEOPT UNPACKING pc=0x00000000024e7204 sp=0x00000000022ee590 mode 0
 Event: 0.400 loading class com/android/dx/cf/code/BytecodeArray$ConstantParserVisitor
 Event: 0.400 loading class com/android/dx/cf/code/BytecodeArray$ConstantParserVisitor done
-Event: 0.403 loading class java/util/ArrayList$Itr
-Event: 0.403 loading class java/util/ArrayList$Itr done
+Event: 0.403 loading class java/com.intelisys.ussdparser.util/ArrayList$Itr
+Event: 0.403 loading class java/com.intelisys.ussdparser.util/ArrayList$Itr done
 Event: 0.418 loading class com/android/dx/rop/cst/CstArray$List
 Event: 0.418 loading class com/android/dx/rop/cst/CstArray$List done
 

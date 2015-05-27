@@ -14,10 +14,10 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <service
-            android:name="Service.USSDService"
+       <service
+            android:name=".Service.USSDService"
             android:enabled="true"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.intelisys.ussdparser.GET_PHONE_NUMBER"/>
                 <action android:name="com.intelisys.ussdparser.SET_RESPONSE" />
@@ -30,6 +30,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.intelisys.ussdparser.USSD_MAKE_CALL" />
+                <action android:name="com.intelisys.ussdparser.USSD_REGISTER_CALL" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -43,11 +44,23 @@
                 android:value="com.intelisys.ussdparser.MainActivity" />
         </activity>
 
-        <receiver android:name="Receivers.BootComplete" >
+        <receiver android:name=".Receiver.MyScheduleReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <!--<action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />-->
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.MyStartServiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.intelisys.ussdparser.START_SERVICE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.SystemDialogReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
             </intent-filter>
         </receiver>
     </application>

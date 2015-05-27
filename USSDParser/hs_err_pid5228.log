@@ -83,7 +83,7 @@ CodeCache: size=245760Kb used=1625Kb max_used=1625Kb free=244134Kb
 Compilation events (10 events):
 Event: 0.373 Thread 0x000000001508e800  250       1       com.android.dx.rop.cst.CstNat::getName (5 bytes)
 Event: 0.373 Thread 0x000000001508e800 nmethod 250 0x0000000002d7e510 code [0x0000000002d7e660, 0x0000000002d7e770]
-Event: 0.373 Thread 0x000000001508e800  253       3       java.util.TreeMap::parentOf (13 bytes)
+Event: 0.373 Thread 0x000000001508e800  253       3       java.com.intelisys.ussdparser.util.TreeMap::parentOf (13 bytes)
 Event: 0.373 Thread 0x000000001508b800  261 %     4       java.lang.String::compareTo @ 34 (78 bytes)
 Event: 0.373 Thread 0x000000001508e800 nmethod 253 0x0000000002d7e190 code [0x0000000002d7e2e0, 0x0000000002d7e470]
 Event: 0.373 Thread 0x000000001508e800  255       3       com.android.dx.rop.cst.Constant::compareTo (9 bytes)
@@ -203,7 +203,8 @@ Deoptimization events (0 events):
 No events
 
 Internal exceptions (2 events):
-Event: 0.045 Thread 0x0000000002afe000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab0f6c0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\srcÎ&µ…§?
+Event: 0.045 Thread 0x0000000002afe000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab0f6c0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\srcï¿½
+&ï¿½ï¿½ï¿½?
 Event: 0.045 Thread 0x0000000002afe000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000eab0f9b8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\prims\jn
 
 Events (10 events):

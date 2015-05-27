@@ -1,4 +1,4 @@
-package Util;
+package com.intelisys.ussdparser.Util;
 
 /**
  * Created by serpe_000 on 21/05/2015.
@@ -48,11 +48,11 @@ public class USSDParser {
             BufferedReader mReader = new BufferedReader(new InputStreamReader(
                     logcatProc.getInputStream()), 1024 * 2);
 
-            String line = "";
+            String line;
             boolean tostop = false;
             long stop = timestamp + after; // to stop the while after "after" ms
             while (((line = mReader.readLine()) != null)
-                    && (System.currentTimeMillis() < stop) && (tostop == false)) {
+                    && (System.currentTimeMillis() < stop) && (!tostop)) {
                 if (line.length() > 19) // the line should be at least with a length of 19 !
                 {
                     if (line.contains(startmsg)) // check if it is a USSD msg
@@ -78,7 +78,7 @@ public class USSDParser {
                             // with "): "
                             // separator
                             if (v.length > 1)
-                                msg = v[1].replace(trimmsg, "").trim() + "\n";
+                                msg = v[1].replace(trimmsg, "").trim().replace("'", "");
 
                             tostop = true;
                         }
@@ -91,59 +91,6 @@ public class USSDParser {
 
         return msg;
     }
-
-    public String getMsg2() {
-
-        long timestamp = System.currentTimeMillis();
-        Log.d("USSDClass",
-                "Class creation - timestamp: " + String.valueOf(timestamp));
-        try {
-            Process logcatProc = Runtime.getRuntime().exec(
-                    "logcat -v time -b main PhoneUtils:D");
-            BufferedReader mReader = new BufferedReader(new InputStreamReader(
-                    logcatProc.getInputStream()), 1024 * 2);
-
-            String line = "";
-            boolean tostop = false;
-            long stopTime = timestamp - before; // to stop the while after "after" ms
-            while (((line = mReader.readLine()) != null)
-                   && (tostop == false)) {
-                if (line.length() > 19)
-                {
-                    timeLog = extracttimestamp(line);
-                    if ((timeLog > 0) && (stopTime >= timeLog)){
-                        tostop = true;
-                    }
-                    if (line.contains(startmsg)) // check if it is a USSD msg
-                    {
-                        timeLog = extracttimestamp(line);
-                        Log.d("USSDClass", "Found line at timestamp : "
-                                + String.valueOf(timeLog));
-                        if (timeLog >= timestamp - before)
-                            found = true; // start of an USDD is found & is recent !
-                    } else if (found) {
-                        // log example :
-                        // "12-10 20:36:39.321 D/PhoneUtils(  178): displayMMIComplete: state=COMPLETE"
-                        if (line.contains(endmsg))
-                            tostop = true;
-                        else {
-                            // log example :
-                            // "12-10 20:36:39.321 D/PhoneUtils(  178): - using text from MMI message: 'Your USSD message with one or several lines"
-                            Log.d("USSDClass", "Line content : " + line);
-                            String[] v = line.split("\\): ");
-                            if (v.length > 1)
-                                msg += v[1].replace(trimmsg, "").trim() + "\n";
-                        }
-                    }
-                }
-            }
-        } catch (IOException e) {
-            Log.d("USSDClass", "Exception:" + e.toString());
-        }
-
-        return msg;
-    }
-
 
     // extract timestamp from a log line with format
     // "MM-dd HH:mm:ss.ms Level/App:msg" Example : 12-10 20:36:39.321

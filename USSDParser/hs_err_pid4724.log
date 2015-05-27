@@ -107,8 +107,8 @@ J 11831 C1 org.gradle.logging.internal.OutputEventRenderer.onOutput(Lorg/gradle/
 j  org.gradle.logging.internal.TextStreamOutputEventListener.onTextEvent(Lorg/gradle/logging/internal/StyledTextOutputEvent;)V+38
 J 7320 C1 org.gradle.logging.internal.TextStreamOutputEventListener.onOutput(Lorg/gradle/logging/internal/OutputEvent;)V (45 bytes) @ 0x0000000003b1a4f4 [0x0000000003b19f00+0x5f4]
 j  org.gradle.logging.internal.PrintStreamLoggingSystem$OutputEventDestination.onOutput(Ljava/lang/CharSequence;)V+30
-J 7307 C1 org.gradle.util.LineBufferingOutputStream.flush()V (37 bytes) @ 0x0000000003affafc [0x0000000003aff620+0x4dc]
-J 14866 C1 org.gradle.util.LineBufferingOutputStream.write(I)V (97 bytes) @ 0x00000000029a11b4 [0x00000000029a0f00+0x2b4]
+J 7307 C1 org.gradle.com.intelisys.ussdparser.util.LineBufferingOutputStream.flush()V (37 bytes) @ 0x0000000003affafc [0x0000000003aff620+0x4dc]
+J 14866 C1 org.gradle.com.intelisys.ussdparser.util.LineBufferingOutputStream.write(I)V (97 bytes) @ 0x00000000029a11b4 [0x00000000029a0f00+0x2b4]
 j  java.io.OutputStream.write([BII)V+69
 J 803 C1 java.io.PrintStream.write([BII)V (69 bytes) @ 0x0000000002946174 [0x0000000002945f20+0x254]
 J 850 C1 sun.nio.cs.StreamEncoder.writeBytes()V (132 bytes) @ 0x0000000002964ac4 [0x0000000002964360+0x764]
@@ -116,7 +116,7 @@ J 848 C1 sun.nio.cs.StreamEncoder.flushBuffer()V (42 bytes) @ 0x000000000295e614
 J 5696 C1 java.io.OutputStreamWriter.flushBuffer()V (8 bytes) @ 0x00000000039552a4 [0x0000000003955240+0x64]
 j  java.io.PrintStream.newLine()V+26
 j  java.io.PrintStream.println(Ljava/lang/Object;)V+15
-j  org.gradle.util.LinePerThreadBufferingOutputStream.println(Ljava/lang/Object;)V+5
+j  org.gradle.com.intelisys.ussdparser.util.LinePerThreadBufferingOutputStream.println(Ljava/lang/Object;)V+5
 j  java.lang.Throwable$WrappedPrintStream.println(Ljava/lang/Object;)V+5
 j  java.lang.Throwable.printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)V+28
 j  java.lang.Throwable.printStackTrace(Ljava/io/PrintStream;)V+9
@@ -178,13 +178,13 @@ CodeCache: size=245760Kb used=44562Kb max_used=44573Kb free=201197Kb
  compilation: enabled
 
 Compilation events (10 events):
-Event: 8931.958 Thread 0x0000000014ac2000 16972       3       java.util.Collections$SingletonSet::iterator (8 bytes)
+Event: 8931.958 Thread 0x0000000014ac2000 16972       3       java.com.intelisys.ussdparser.util.Collections$SingletonSet::iterator (8 bytes)
 Event: 8931.958 Thread 0x0000000014ac2000 nmethod 16972 0x00000000051cd690 code [0x00000000051cd800, 0x00000000051cdad0]
 Event: 8931.978 Thread 0x0000000014ac2000 16973       3       com.android.build.gradle.BasePlugin::getMetaClass (23 bytes)
 Event: 8931.979 Thread 0x0000000014ac2000 nmethod 16973 0x00000000051cd210 code [0x00000000051cd380, 0x00000000051cd608]
 Event: 8932.350 Thread 0x0000000014ac2000 16974       3       com.android.build.gradle.BasePlugin::getProperty (12 bytes)
 Event: 8932.351 Thread 0x0000000014ac2000 nmethod 16974 0x00000000051d5a10 code [0x00000000051d5ba0, 0x00000000051d5f58]
-Event: 8932.364 Thread 0x0000000014abb800 16975       4       java.util.regex.Pattern::compile (406 bytes)
+Event: 8932.364 Thread 0x0000000014abb800 16975       4       java.com.intelisys.ussdparser.util.regex.Pattern::compile (406 bytes)
 Event: 8932.455 Thread 0x0000000014abb800 nmethod 16975 0x00000000051e7a90 code [0x00000000051e7f00, 0x00000000051ea248]
 Event: 8932.458 Thread 0x0000000014ac2000 16976       3       java.lang.ProcessImpl::needsEscaping (57 bytes)
 Event: 8932.459 Thread 0x0000000014ac2000 nmethod 16976 0x00000000051d5150 code [0x00000000051d52e0, 0x00000000051d57d8]
@@ -299,12 +299,12 @@ Heap after GC invocations=107 (full 32):
 Deoptimization events (10 events):
 Event: 8928.138 Thread 0x0000000017a7c800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00000000050968d8 method=com.sun.org.apache.xerces.internal.dom.AttributeMap.setNamedItem(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node; @ 4
 Event: 8928.141 Thread 0x0000000017a7c800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00000000050968d8 method=com.sun.org.apache.xerces.internal.dom.AttributeMap.setNamedItem(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node; @ 4
-Event: 8928.842 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
-Event: 8928.845 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
-Event: 8928.871 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
-Event: 8928.871 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
-Event: 8929.358 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000051a065c method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 27
-Event: 8929.367 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000051a065c method=java.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 27
+Event: 8928.842 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
+Event: 8928.845 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
+Event: 8928.871 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
+Event: 8928.871 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000000005182590 method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 20
+Event: 8929.358 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000051a065c method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 27
+Event: 8929.367 Thread 0x0000000017a7c800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000051a065c method=java.com.intelisys.ussdparser.util.ComparableTimSort.reverseRange([Ljava/lang/Object;II)V @ 27
 Event: 8933.212 Thread 0x0000000017a7c000 Uncommon trap: reason=unreached action=reinterpret pc=0x000000000322ef8c method=java.lang.ThreadLocal.get()Ljava/lang/Object; @ 11
 Event: 8933.212 Thread 0x0000000017a7c000 Uncommon trap: reason=unreached action=reinterpret pc=0x00000000045f3464 method=java.lang.ThreadLocal.get()Ljava/lang/Object; @ 11
 
@@ -314,7 +314,7 @@ Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/security/Privileged
 Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f824ebb8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
 Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f824fe98) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
 Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f8257908) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\prims\jvm.cpp, line 1248]
-Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/lang/ClassNotFoundException': com/android/build/gradle/internal/dependency/SymbolFileProviderImplCustomizer> (0x00000000f8258038) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\classfile\system¿ÿ›rÁ@
+Event: 8932.272 Thread 0x0000000017a7c800 Exception <a 'java/lang/ClassNotFoundException': com/android/build/gradle/internal/dependency/SymbolFileProviderImplCustomizer> (0x00000000f8258038) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\classfile\systemï¿½ï¿½ï¿½rï¿½@
 Event: 8933.212 Thread 0x0000000017a7c000 StackOverflowError at 0x00000000037c4ad8
 Event: 8933.212 Thread 0x0000000017a7c000 Exception <a 'java/lang/StackOverflowError'> (0x00000000f87022d8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u11\648\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 595]
 Event: 8933.212 Thread 0x0000000017a7c000 Implicit null exception at 0x000000000322eee8 to 0x000000000322ef79
@@ -323,8 +323,8 @@ Event: 8933.212 Thread 0x0000000017a7c000 Implicit null exception at 0x000000000
 Events (10 events):
 Event: 8933.212 loading class java/lang/Throwable$WrappedPrintStream
 Event: 8933.213 loading class java/lang/Throwable$WrappedPrintStream done
-Event: 8933.213 loading class java/util/IdentityHashMap$KeySet
-Event: 8933.240 loading class java/util/IdentityHashMap$KeySet done
+Event: 8933.213 loading class java/com.intelisys.ussdparser.util/IdentityHashMap$KeySet
+Event: 8933.240 loading class java/com.intelisys.ussdparser.util/IdentityHashMap$KeySet done
 Event: 8933.300 Executing VM operation: RevokeBias
 Event: 8933.300 Executing VM operation: RevokeBias done
 Event: 8933.300 Executing VM operation: RevokeBias

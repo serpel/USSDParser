@@ -1,4 +1,4 @@
-package Util;
+package com.intelisys.ussdparser.Util;
 
 /**
  * Created by serpe_000 on 25/05/2015.

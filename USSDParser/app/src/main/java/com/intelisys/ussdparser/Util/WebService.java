@@ -1,4 +1,4 @@
-package Util;
+package com.intelisys.ussdparser.Util;
 
 /**
  * Created by serpe_000 on 22/05/2015.
@@ -22,28 +22,27 @@ public class WebService {
 
     public static String getNextNumber(String webMethName) {
 
-        String resTxt;
+        String resTxt = null;
 
         SoapObject request = new SoapObject(NAMESPACE, webMethName);
         SoapSerializationEnvelope envelope = getSoapSerializationEnvelope(request);
         HttpTransportSE androidHttpTransport = new HttpTransportSE(URL, MSG_TIMEOUT);
 
         try {
-            // Invoke web service SOAP_ACTION: http://tempuri.org/ObtenerSiguiente
+            // Invoke web com.intelisys.ussdparser.service SOAP_ACTION: http://tempuri.org/ObtenerSiguiente
             androidHttpTransport.call(NAMESPACE+webMethName, envelope);
             SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
             resTxt = response.toString();
 
         } catch (Exception e) {
             Log.e(TAG, e.getMessage(), e.fillInStackTrace());
-            resTxt = TAG + ": Error occured";
         }
         return resTxt;
     }
 
     public static String setUssdResponse(String webMethName, String number, String ussdTextResponse) {
 
-        String resTxt;
+        String resTxt=null;
 
         SoapObject request = new SoapObject(NAMESPACE, webMethName);
 
@@ -63,14 +62,13 @@ public class WebService {
         HttpTransportSE androidHttpTransport = new HttpTransportSE(URL, MSG_TIMEOUT);
 
         try {
-            // Invoke web service SOAP_ACTION: http://tempuri.org/ObtenerSiguiente
+            // Invoke web com.intelisys.ussdparser.service SOAP_ACTION: http://tempuri.org/ObtenerSiguiente
             androidHttpTransport.call(NAMESPACE+webMethName, envelope);
             SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
             resTxt = response.toString();
 
         } catch (Exception e) {
             Log.e(TAG, e.getMessage(), e.fillInStackTrace());
-            resTxt = TAG + ": Error occured";
         }
         //Return resTxt to calling object
         return resTxt;

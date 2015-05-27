@@ -15,5 +15,9 @@
     <string name="time_interval">Time interval (in Minutes)</string>
     <string name="time_interval_hint">0.5</string>
     <string name="settings">Settings</string>
+    <string name="uri_scheme">ussd</string>
+    <string name="uri_authority">cd</string>
+    <string name="uri_path">/</string>
+    <string name="uri_param_name">uval</string>
 
 </resources>

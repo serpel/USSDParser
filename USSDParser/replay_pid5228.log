@@ -45,10 +45,10 @@ instanceKlass com/android/dx/cf/code/Simulator$SimVisitor
 instanceKlass com/android/dx/cf/code/Simulator
 instanceKlass com/android/dx/cf/code/BaseMachine
 instanceKlass com/android/dx/cf/code/ByteBlock
-instanceKlass com/android/dx/util/LabeledItem
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/LabeledItem
 instanceKlass com/android/dx/cf/code/ByteCatchList$Item
 instanceKlass com/android/dx/cf/code/ByteOps
-instanceKlass com/android/dx/util/Bits
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/Bits
 instanceKlass com/android/dx/cf/code/BasicBlocker
 instanceKlass com/android/dx/rop/code/BasicBlock$Visitor
 instanceKlass com/android/dx/rop/code/Insn
@@ -59,9 +59,9 @@ instanceKlass com/android/dx/cf/code/ConcreteMethod
 instanceKlass com/android/dx/dex/file/EncodedMember
 instanceKlass com/android/dx/dex/file/ValueEncoder
 instanceKlass com/android/dx/dex/file/AnnotationItem$TypeIdSorter
-instanceKlass java/util/Collections$UnmodifiableCollection$1
-instanceKlass java/util/TreeMap$PrivateEntryIterator
-instanceKlass java/util/TreeMap$Entry
+instanceKlass java/com.intelisys.ussdparser.util/Collections$UnmodifiableCollection$1
+instanceKlass java/com.intelisys.ussdparser.util/TreeMap$PrivateEntryIterator
+instanceKlass java/com.intelisys.ussdparser.util/TreeMap$Entry
 instanceKlass com/android/dx/rop/annotation/NameValuePair
 instanceKlass com/android/dx/dex/file/AnnotationUtils
 instanceKlass com/android/dx/dex/cf/AttributeTranslator
@@ -70,7 +70,7 @@ instanceKlass com/android/dx/rop/code/TranslationAdvice
 instanceKlass com/android/dx/dex/code/DalvCode$AssignIndicesCallback
 instanceKlass com/android/dx/dex/cf/CfTranslator
 instanceKlass com/android/dx/cf/attrib/InnerClassList$Item
-instanceKlass com/android/dx/util/Hex
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/Hex
 instanceKlass com/android/dx/rop/code/AccessFlags
 instanceKlass com/android/dx/cf/code/LocalVariableList$Item
 instanceKlass com/android/dx/cf/code/LineNumberList$Item
@@ -85,11 +85,11 @@ instanceKlass com/android/dx/cf/iface/Member
 instanceKlass com/android/dx/cf/direct/MemberListParser
 instanceKlass com/android/dx/rop/type/Prototype
 instanceKlass com/android/dx/rop/type/Type
-instanceKlass com/android/dx/util/MutabilityControl
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/MutabilityControl
 instanceKlass com/android/dx/cf/cst/ConstantPoolParser
 instanceKlass com/android/dx/cf/code/BytecodeArray$Visitor
 instanceKlass com/android/dx/cf/iface/Attribute
-instanceKlass com/android/dx/util/ByteArray
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/ByteArray
 instanceKlass com/android/dx/cf/iface/MethodList
 instanceKlass com/android/dx/cf/iface/FieldList
 instanceKlass com/android/dx/rop/type/TypeList
@@ -98,20 +98,20 @@ instanceKlass com/android/dx/rop/cst/ConstantPool
 instanceKlass com/android/dx/cf/direct/DirectClassFile
 instanceKlass com/android/dx/cf/iface/ClassFile
 instanceKlass com/android/dx/cf/iface/HasAttribute
-instanceKlass com/android/dex/util/FileUtils
+instanceKlass com/android/dex/com.intelisys.ussdparser.util/FileUtils
 instanceKlass com/android/dx/command/dexer/Main$1
 instanceKlass com/android/dx/cf/direct/ClassPathOpener$1
 instanceKlass com/android/dx/cf/direct/ClassPathOpener
-instanceKlass java/util/NavigableMap
-instanceKlass java/util/SortedMap
+instanceKlass java/com.intelisys.ussdparser.util/NavigableMap
+instanceKlass java/com.intelisys.ussdparser.util/SortedMap
 instanceKlass com/android/dx/dex/file/MixedItemSection$1
 instanceKlass com/android/dx/dex/file/Item
-instanceKlass com/android/dx/util/AnnotatedOutput
-instanceKlass com/android/dx/util/Output
-instanceKlass com/android/dex/util/ByteOutput
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/AnnotatedOutput
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/Output
+instanceKlass com/android/dex/com.intelisys.ussdparser.util/ByteOutput
 instanceKlass com/android/dx/rop/type/TypeBearer
 instanceKlass com/android/dx/rop/cst/Constant
-instanceKlass com/android/dx/util/ToHuman
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/ToHuman
 instanceKlass com/android/dx/dex/file/Section
 instanceKlass com/android/dx/dex/file/DexFile
 instanceKlass com/android/dx/dex/DexOptions
@@ -119,7 +119,7 @@ instanceKlass com/android/dx/command/DxConsole
 instanceKlass com/android/dx/dex/cf/CfOptions
 instanceKlass com/android/dx/command/dexer/Main$Arguments$ArgumentsParser
 instanceKlass com/android/dx/command/dexer/Main$Arguments
-instanceKlass java/util/concurrent/Callable
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/Callable
 instanceKlass com/android/dx/cf/direct/ClassPathOpener$Consumer
 instanceKlass com/android/dx/cf/direct/AttributeFactory
 instanceKlass com/android/dx/cf/direct/ClassPathOpener$FileNameFilter
@@ -132,8 +132,8 @@ instanceKlass sun/net/www/MessageHeader
 instanceKlass java/net/URLConnection
 instanceKlass java/security/PermissionCollection
 instanceKlass sun/nio/ByteBuffered
-instanceKlass sun/security/util/ManifestEntryVerifier
-instanceKlass sun/security/util/SignatureFileVerifier
+instanceKlass sun/security/com.intelisys.ussdparser.util/ManifestEntryVerifier
+instanceKlass sun/security/com.intelisys.ussdparser.util/SignatureFileVerifier
 instanceKlass java/lang/Package
 instanceKlass sun/misc/Resource
 instanceKlass sun/misc/ExtensionDependency
@@ -147,48 +147,48 @@ instanceKlass sun/nio/cs/ThreadLocalCoders
 instanceKlass java/lang/Readable
 instanceKlass sun/misc/URLClassPath$Loader
 instanceKlass sun/misc/URLClassPath$3
-instanceKlass sun/net/util/URLUtil
+instanceKlass sun/net/com.intelisys.ussdparser.util/URLUtil
 instanceKlass java/net/URLClassLoader$1
-instanceKlass java/util/jar/JarVerifier$3
+instanceKlass java/com.intelisys.ussdparser.util/jar/JarVerifier$3
 instanceKlass java/security/CodeSigner
-instanceKlass java/util/jar/JarVerifier
+instanceKlass java/com.intelisys.ussdparser.util/jar/JarVerifier
 instanceKlass sun/misc/ASCIICaseInsensitiveComparator
-instanceKlass java/util/jar/Attributes$Name
-instanceKlass java/util/jar/Attributes
-instanceKlass java/util/jar/Manifest
+instanceKlass java/com.intelisys.ussdparser.util/jar/Attributes$Name
+instanceKlass java/com.intelisys.ussdparser.util/jar/Attributes
+instanceKlass java/com.intelisys.ussdparser.util/jar/Manifest
 instanceKlass sun/misc/IOUtils
-instanceKlass java/util/zip/ZStreamRef
-instanceKlass java/util/zip/Inflater
-instanceKlass sun/util/calendar/CalendarUtils
-instanceKlass sun/util/calendar/CalendarDate
-instanceKlass java/util/TimeZone$1
-instanceKlass java/util/zip/CRC32
-instanceKlass java/util/zip/Checksum
-instanceKlass sun/util/calendar/ZoneInfoFile$ZoneOffsetTransitionRule
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZStreamRef
+instanceKlass java/com.intelisys.ussdparser.util/zip/Inflater
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/CalendarUtils
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/CalendarDate
+instanceKlass java/com.intelisys.ussdparser.util/TimeZone$1
+instanceKlass java/com.intelisys.ussdparser.util/zip/CRC32
+instanceKlass java/com.intelisys.ussdparser.util/zip/Checksum
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/ZoneInfoFile$ZoneOffsetTransitionRule
 instanceKlass java/io/FileInputStream$1
 instanceKlass java/io/DataInput
-instanceKlass sun/util/calendar/ZoneInfoFile$1
-instanceKlass sun/util/calendar/ZoneInfoFile
-instanceKlass java/util/TimeZone
-instanceKlass sun/util/calendar/CalendarSystem
-instanceKlass java/util/Date
-instanceKlass java/util/zip/ZipUtils
-instanceKlass java/util/zip/ZipEntry
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/ZoneInfoFile$1
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/ZoneInfoFile
+instanceKlass java/com.intelisys.ussdparser.util/TimeZone
+instanceKlass sun/com.intelisys.ussdparser.util/calendar/CalendarSystem
+instanceKlass java/com.intelisys.ussdparser.util/Date
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipUtils
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipEntry
 instanceKlass sun/nio/ch/DirectBuffer
 instanceKlass sun/misc/PerfCounter$CoreCounters
 instanceKlass sun/misc/Perf
 instanceKlass sun/misc/Perf$GetPerfAction
 instanceKlass sun/misc/PerfCounter
-instanceKlass java/util/zip/ZipCoder
-instanceKlass java/util/Deque
-instanceKlass java/util/Queue
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipCoder
+instanceKlass java/com.intelisys.ussdparser.util/Deque
+instanceKlass java/com.intelisys.ussdparser.util/Queue
 instanceKlass java/nio/charset/StandardCharsets
-instanceKlass java/util/jar/JavaUtilJarAccessImpl
+instanceKlass java/com.intelisys.ussdparser.util/jar/JavaUtilJarAccessImpl
 instanceKlass sun/misc/JavaUtilJarAccess
-instanceKlass java/util/zip/ZipFile$1
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipFile$1
 instanceKlass sun/misc/JavaUtilZipFileAccess
-instanceKlass java/util/zip/ZipFile
-instanceKlass java/util/zip/ZipConstants
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipFile
+instanceKlass java/com.intelisys.ussdparser.util/zip/ZipConstants
 instanceKlass java/nio/charset/CharsetDecoder
 instanceKlass sun/nio/cs/ArrayDecoder
 instanceKlass java/lang/StringCoding$StringDecoder
@@ -217,28 +217,28 @@ instanceKlass sun/misc/JavaSecurityAccess
 instanceKlass java/net/URLStreamHandler
 instanceKlass java/net/Parts
 instanceKlass java/lang/CharacterData
-instanceKlass sun/util/locale/LocaleUtils
-instanceKlass java/util/Locale$LocaleKey
-instanceKlass sun/util/locale/BaseLocale$Key
-instanceKlass sun/util/locale/BaseLocale
-instanceKlass java/util/concurrent/ConcurrentHashMap$CollectionView
-instanceKlass java/util/concurrent/ConcurrentHashMap$CounterCell
-instanceKlass java/util/concurrent/ConcurrentHashMap$Node
-instanceKlass java/util/concurrent/locks/ReentrantLock
-instanceKlass java/util/concurrent/locks/Lock
-instanceKlass java/util/concurrent/ConcurrentMap
-instanceKlass sun/util/locale/LocaleObjectCache
-instanceKlass java/util/Locale
+instanceKlass sun/com.intelisys.ussdparser.util/locale/LocaleUtils
+instanceKlass java/com.intelisys.ussdparser.util/Locale$LocaleKey
+instanceKlass sun/com.intelisys.ussdparser.util/locale/BaseLocale$Key
+instanceKlass sun/com.intelisys.ussdparser.util/locale/BaseLocale
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/ConcurrentHashMap$CollectionView
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/ConcurrentHashMap$CounterCell
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/ConcurrentHashMap$Node
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/locks/ReentrantLock
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/locks/Lock
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/ConcurrentMap
+instanceKlass sun/com.intelisys.ussdparser.util/locale/LocaleObjectCache
+instanceKlass java/com.intelisys.ussdparser.util/Locale
 instanceKlass java/net/URL
-instanceKlass java/util/BitSet
+instanceKlass java/com.intelisys.ussdparser.util/BitSet
 instanceKlass sun/net/www/ParseUtil
 instanceKlass sun/misc/MetaIndex
 instanceKlass sun/misc/Launcher$ExtClassLoader$1
-instanceKlass java/util/StringTokenizer
+instanceKlass java/com.intelisys.ussdparser.util/StringTokenizer
 instanceKlass java/net/URLClassLoader$7
 instanceKlass sun/misc/JavaNetAccess
 instanceKlass java/lang/ClassLoader$ParallelLoaders
-instanceKlass sun/security/util/Debug
+instanceKlass sun/security/com.intelisys.ussdparser.util/Debug
 instanceKlass sun/misc/Launcher$Factory
 instanceKlass java/net/URLStreamHandlerFactory
 instanceKlass sun/misc/Launcher
@@ -275,7 +275,7 @@ instanceKlass sun/reflect/ReflectionFactory$1
 instanceKlass java/lang/Class$1
 instanceKlass sun/nio/cs/SingleByte
 instanceKlass sun/nio/cs/HistoricallyNamedCharset
-instanceKlass java/util/Arrays
+instanceKlass java/com.intelisys.ussdparser.util/Arrays
 instanceKlass sun/security/action/GetPropertyAction
 instanceKlass java/lang/ThreadLocal
 instanceKlass java/nio/charset/spi/CharsetProvider
@@ -291,14 +291,14 @@ instanceKlass sun/reflect/generics/repository/AbstractRepository
 instanceKlass java/lang/Class$Atomic
 instanceKlass java/lang/Class$ReflectionData
 instanceKlass java/lang/Class$3
-instanceKlass java/util/concurrent/atomic/AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/atomic/AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1
 instanceKlass java/security/PrivilegedExceptionAction
-instanceKlass java/util/concurrent/atomic/AtomicReferenceFieldUpdater
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/atomic/AtomicReferenceFieldUpdater
 instanceKlass java/io/OutputStream
 instanceKlass java/io/Flushable
-instanceKlass java/util/HashMap$Node
+instanceKlass java/com.intelisys.ussdparser.util/HashMap$Node
 instanceKlass sun/reflect/Reflection
-instanceKlass java/util/Collections$UnmodifiableCollection
+instanceKlass java/com.intelisys.ussdparser.util/Collections$UnmodifiableCollection
 instanceKlass sun/misc/SharedSecrets
 instanceKlass java/io/FileDescriptor$1
 instanceKlass sun/misc/JavaIOFileDescriptorAccess
@@ -308,26 +308,26 @@ instanceKlass java/io/Closeable
 instanceKlass java/lang/AutoCloseable
 instanceKlass sun/misc/Version
 instanceKlass java/lang/Runtime
-instanceKlass java/util/Hashtable$Enumerator
-instanceKlass java/util/Iterator
-instanceKlass java/util/Enumeration
-instanceKlass java/util/Objects
-instanceKlass java/util/Collections$SynchronizedCollection
-instanceKlass java/util/AbstractMap
-instanceKlass java/util/Collections
-instanceKlass java/util/Set
+instanceKlass java/com.intelisys.ussdparser.util/Hashtable$Enumerator
+instanceKlass java/com.intelisys.ussdparser.util/Iterator
+instanceKlass java/com.intelisys.ussdparser.util/Enumeration
+instanceKlass java/com.intelisys.ussdparser.util/Objects
+instanceKlass java/com.intelisys.ussdparser.util/Collections$SynchronizedCollection
+instanceKlass java/com.intelisys.ussdparser.util/AbstractMap
+instanceKlass java/com.intelisys.ussdparser.util/Collections
+instanceKlass java/com.intelisys.ussdparser.util/Set
 instanceKlass java/lang/Math
-instanceKlass java/util/Hashtable$Entry
-instanceKlass java/util/Map$Entry
+instanceKlass java/com.intelisys.ussdparser.util/Hashtable$Entry
+instanceKlass java/com.intelisys.ussdparser.util/Map$Entry
 instanceKlass sun/misc/VM
 instanceKlass java/lang/ref/ReferenceQueue$Lock
 instanceKlass java/lang/ref/ReferenceQueue
 instanceKlass java/lang/ref/Reference$Lock
 instanceKlass sun/reflect/ReflectionFactory
-instanceKlass java/util/AbstractCollection
-instanceKlass java/util/RandomAccess
-instanceKlass java/util/List
-instanceKlass java/util/Collection
+instanceKlass java/com.intelisys.ussdparser.util/AbstractCollection
+instanceKlass java/com.intelisys.ussdparser.util/RandomAccess
+instanceKlass java/com.intelisys.ussdparser.util/List
+instanceKlass java/com.intelisys.ussdparser.util/Collection
 instanceKlass java/lang/Iterable
 instanceKlass java/security/cert/Certificate
 instanceKlass sun/reflect/ReflectionFactory$GetReflectionFactoryAction
@@ -336,7 +336,7 @@ instanceKlass java/security/AccessController
 instanceKlass java/security/Permission
 instanceKlass java/security/Guard
 instanceKlass java/lang/String$CaseInsensitiveComparator
-instanceKlass java/util/Comparator
+instanceKlass java/com.intelisys.ussdparser.util/Comparator
 instanceKlass java/io/ObjectStreamField
 instanceKlass java/lang/Number
 instanceKlass java/lang/Character
@@ -362,8 +362,8 @@ instanceKlass sun/reflect/MagicAccessorImpl
 instanceKlass java/lang/reflect/Parameter
 instanceKlass java/lang/reflect/Member
 instanceKlass java/lang/reflect/AccessibleObject
-instanceKlass java/util/Dictionary
-instanceKlass java/util/Map
+instanceKlass java/com.intelisys.ussdparser.util/Dictionary
+instanceKlass java/com.intelisys.ussdparser.util/Map
 instanceKlass java/lang/ThreadGroup
 instanceKlass java/lang/Thread$UncaughtExceptionHandler
 instanceKlass java/lang/Thread
@@ -388,7 +388,7 @@ ciInstanceKlass java/lang/Object 1 1 79 3 3 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 ciInstanceKlass java/io/Serializable 1 0 7 1 1 1 100 100 1
 ciInstanceKlass java/lang/String 1 1 538 3 3 3 3 8 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 100 100 100 100 7 100 100 100 100 7 100 100 100 100 100 100 100 100 100 7 100 7 7 100 7 100 100 7 100 7 100 100 100 7 100 100 100 100 7 100 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 1 1
 staticfield java/lang/String serialPersistentFields [Ljava/io/ObjectStreamField; 0 [Ljava/io/ObjectStreamField;
-staticfield java/lang/String CASE_INSENSITIVE_ORDER Ljava/util/Comparator; java/lang/String$CaseInsensitiveComparator
+staticfield java/lang/String CASE_INSENSITIVE_ORDER Ljava/com.intelisys.ussdparser.util/Comparator; java/lang/String$CaseInsensitiveComparator
 ciInstanceKlass java/lang/Class 1 1 1166 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 5 0 8 8 8 8 100 100 100 100 100 100 100 7 100 7 100 7 100 100 7 100 100 7 100 7 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 7 100 7 100 100 100 7 100 100 7 7 100 100 100 7 100 100 100 100 7 100 100 100 100 100 100 100 100 100 100 100 100 100 100 7 7 7 7 100 100 100 100 100 100 100 100 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 1 1 1 1 1 1 1 1
 staticfield java/lang/Class serialPersistentFields [Ljava/io/ObjectStreamField; 0 [Ljava/io/ObjectStreamField;
 ciInstanceKlass java/lang/Cloneable 1 0 7 1 1 1 100 100 1
@@ -404,7 +404,7 @@ instanceKlass java/lang/Exception
 instanceKlass java/lang/Error
 ciInstanceKlass java/lang/Throwable 1 1 327 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 100 100 100 100 100 100 7 100 100 100 100 7 7 100 7 7 100 100 7 100 7 100 7 7 7 100 100 100 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 1 1 1 1 1
 staticfield java/lang/Throwable UNASSIGNED_STACK [Ljava/lang/StackTraceElement; 0 [Ljava/lang/StackTraceElement;
-staticfield java/lang/Throwable SUPPRESSED_SENTINEL Ljava/util/List; java/util/Collections$UnmodifiableRandomAccessList
+staticfield java/lang/Throwable SUPPRESSED_SENTINEL Ljava/com.intelisys.ussdparser.util/List; java/com.intelisys.ussdparser.util/Collections$UnmodifiableRandomAccessList
 staticfield java/lang/Throwable EMPTY_THROWABLE_ARRAY [Ljava/lang/Throwable; 0 [Ljava/lang/Throwable;
 staticfield java/lang/Throwable $assertionsDisabled Z 1
 instanceKlass java/lang/AssertionError
@@ -415,19 +415,19 @@ ciInstanceKlass java/lang/Error 1 1 30 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 7 1 1 12 
 ciInstanceKlass java/lang/ThreadDeath 0 0 18 1 1 1 1 1 1 1 1 1 1 5 0 100 100 12 10 1
 instanceKlass java/security/GeneralSecurityException
 instanceKlass java/io/IOException
-instanceKlass java/util/concurrent/ExecutionException
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/ExecutionException
 instanceKlass java/lang/InterruptedException
 instanceKlass java/lang/ReflectiveOperationException
 instanceKlass java/lang/RuntimeException
 ciInstanceKlass java/lang/Exception 1 1 30 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 7 1 1 12 12 12 12 12 10 10 10 10 10 1
-instanceKlass com/android/dx/util/Warning
+instanceKlass com/android/dx/com.intelisys.ussdparser.util/Warning
 instanceKlass java/lang/NegativeArraySizeException
 instanceKlass java/lang/IndexOutOfBoundsException
 instanceKlass java/lang/IllegalStateException
 instanceKlass java/lang/UnsupportedOperationException
-instanceKlass java/util/NoSuchElementException
+instanceKlass java/com.intelisys.ussdparser.util/NoSuchElementException
 instanceKlass com/android/dx/command/dexer/Main$StopProcessing
-instanceKlass com/android/dex/util/ExceptionWithContext
+instanceKlass com/android/dex/com.intelisys.ussdparser.util/ExceptionWithContext
 instanceKlass com/android/dx/command/UsageException
 instanceKlass java/lang/IllegalArgumentException
 instanceKlass java/lang/ArithmeticException
@@ -438,7 +438,7 @@ instanceKlass java/lang/ClassCastException
 ciInstanceKlass java/lang/RuntimeException 1 1 30 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 100 1 1 12 12 12 12 12 10 10 10 10 10 1
 ciInstanceKlass java/lang/SecurityManager 0 0 375 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 1 1
 ciInstanceKlass java/security/ProtectionDomain 1 1 267 8 8 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 100 100 7 100 100 100 100 100 100 100 100 100 7 7 100 7 7 7 100 7 7 100 100 100 7 7 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 1
-staticfield java/security/ProtectionDomain debug Lsun/security/util/Debug; null
+staticfield java/security/ProtectionDomain debug Lsun/security/com.intelisys.ussdparser.util/Debug; null
 ciInstanceKlass java/security/AccessControlContext 1 1 302 8 8 8 8 8 8 8 8 8 8 8 8 8 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 100 100 100 7 100 100 100 100 100 7 100 100 7 100 100 100 100 100 100 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 1
 instanceKlass java/lang/IllegalAccessException
 instanceKlass java/lang/ClassNotFoundException
@@ -462,11 +462,11 @@ instanceKlass java/lang/ref/FinalReference
 instanceKlass java/lang/ref/WeakReference
 instanceKlass java/lang/ref/SoftReference
 ciInstanceKlass java/lang/ref/Reference 1 1 117 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 7 7 7 100 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 1 1 1
-instanceKlass sun/util/locale/LocaleObjectCache$CacheEntry
+instanceKlass sun/com.intelisys.ussdparser.util/locale/LocaleObjectCache$CacheEntry
 ciInstanceKlass java/lang/ref/SoftReference 1 1 35 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 7 7 1 1 1 1 12 12 12 12 12 9 9 10 10 10 1
 instanceKlass java/lang/ThreadLocal$ThreadLocalMap$Entry
 instanceKlass java/lang/invoke/MethodType$ConcurrentWeakInternSet$WeakEntry
-instanceKlass java/util/WeakHashMap$Entry
+instanceKlass java/com.intelisys.ussdparser.util/WeakHashMap$Entry
 ciInstanceKlass java/lang/ref/WeakReference 1 1 20 1 1 1 1 1 1 1 1 7 100 1 1 1 1 12 12 10 10 1
 instanceKlass java/lang/ref/Finalizer
 ciInstanceKlass java/lang/ref/FinalReference 1 1 16 1 1 1 1 1 1 1 100 7 1 1 1 12 10 1
@@ -480,12 +480,12 @@ ciInstanceKlass java/lang/Thread 1 1 546 3 3 8 8 8 8 8 8 8 8 8 8 8 8 7 1 1 1 1 1
 staticfield java/lang/Thread EMPTY_STACK_TRACE [Ljava/lang/StackTraceElement; 0 [Ljava/lang/StackTraceElement;
 staticfield java/lang/Thread SUBCLASS_IMPLEMENTATION_PERMISSION Ljava/lang/RuntimePermission; java/lang/RuntimePermission
 ciInstanceKlass java/lang/ThreadGroup 1 1 268 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 100 100 100 100 100 7 100 100 7 7 100 100 7 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 1 1
-instanceKlass java/util/Hashtable
-ciInstanceKlass java/util/Dictionary 1 1 31 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 100 1 1 1 1 1 1 12 10 1
-instanceKlass java/util/Properties
-ciInstanceKlass java/util/Hashtable 1 1 397 3 3 4 4 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 5 0 100 100 100 100 100 100 100 100 100 100 7 100 100 7 100 7 100 100 100 7 100 7 7 100 7 7 7 100 100 7 7 7 100 7 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 1 1 1 1
-ciInstanceKlass java/util/Properties 1 1 263 3 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 100 100 100 100 100 100 100 100 100 100 7 100 100 100 100 100 7 100 100 7 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 1 1 1
-staticfield java/util/Properties hexDigit [C 16
+instanceKlass java/com.intelisys.ussdparser.util/Hashtable
+ciInstanceKlass java/com.intelisys.ussdparser.util/Dictionary 1 1 31 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 7 100 1 1 1 1 1 1 12 10 1
+instanceKlass java/com.intelisys.ussdparser.util/Properties
+ciInstanceKlass java/com.intelisys.ussdparser.util/Hashtable 1 1 397 3 3 4 4 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 5 0 100 100 100 100 100 100 100 100 100 100 7 100 100 7 100 7 100 100 100 7 100 7 7 100 7 7 7 100 100 7 7 7 100 7 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 1 1 1 1
+ciInstanceKlass java/com.intelisys.ussdparser.util/Properties 1 1 263 3 8 8 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 0 100 100 100 100 100 100 100 100 100 100 100 7 100 100 100 100 100 7 100 100 7 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 1 1 1
+staticfield java/com.intelisys.ussdparser.util/Properties hexDigit [C 16
 instanceKlass java/lang/reflect/Executable
 instanceKlass java/lang/reflect/Field
 ciInstanceKlass java/lang/reflect/AccessibleObject 1 1 144 8 8 8 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 100 100 100 7 100 100 7 7 100 7 100 7 7 100 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 1 1
@@ -581,7 +581,7 @@ staticfield java/lang/Boolean TYPE Ljava/lang/Class; java/lang/Class
 ciInstanceKlass java/lang/Character 1 1 459 3 3 3 3 3 3 3 3 8 8 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 5 0 5 0 100 100 100 100 100 100 100 7 100 7 100 100 100 100 100 100 100 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 1 1 1 1 1
 staticfield java/lang/Character TYPE Ljava/lang/Class; java/lang/Class
 staticfield java/lang/Character $assertionsDisabled Z 1
-instanceKlass java/util/concurrent/atomic/AtomicInteger
+instanceKlass java/com.intelisys.ussdparser.util/concurrent/atomic/AtomicInteger
 instanceKlass java/lang/Long
 instanceKlass java/lang/Integer
 instanceKlass java/lang/Short

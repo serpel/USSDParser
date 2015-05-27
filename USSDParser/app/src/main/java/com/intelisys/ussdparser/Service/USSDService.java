@@ -1,21 +1,25 @@
-package Service;
+package com.intelisys.ussdparser.Service;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
 import com.intelisys.ussdparser.MainActivity;
+import com.intelisys.ussdparser.Util.WebService;
 
-import Util.WebService;
 
 public class USSDService extends Service {
 
     private static final String TAG = "USSDService";
     public static final String GET_PHONE_NUMBER = "com.intelisys.ussdparser.GET_PHONE_NUMBER";
     public static final String SET_RESPONSE = "com.intelisys.ussdparser.SET_RESPONSE";
+
+    private final IBinder mBinder = new MyBinder();
     public static boolean isRunning;
 
     BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
@@ -30,7 +34,7 @@ public class USSDService extends Service {
                 String result = WebService.setUssdResponse("GuardaRespuesta", phoneNumber, ussdResponse);
 
                 if(result.equals("1")){
-                    Log.i(TAG, "Saved USSD response successful");
+                    Log.i(TAG, "Saved USSD response successful, number:"+phoneNumber+"text: "+ussdResponse);
                 }
             }else if(intent.getAction().equals(GET_PHONE_NUMBER)){
 
@@ -44,9 +48,19 @@ public class USSDService extends Service {
         }
     };
 
+    public class MyBinder extends Binder {
+        public USSDService getService() {
+            return USSDService.this;
+        }
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return Service.START_NOT_STICKY;
+    }
+
     @Override
     public void onCreate() {
-
         Log.i(TAG, "Service onCreate");
         isRunning = true;
 
@@ -55,17 +69,25 @@ public class USSDService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        //throw new UnsupportedOperationException("Not yet implemented");
         Log.i(TAG, "Service onBind");
-        return null;
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(GET_PHONE_NUMBER);
+        filter.addAction(SET_RESPONSE);
+        //filter.addDataScheme(getBaseContext().getString(R.string.uri_scheme));
+        //filter.addDataAuthority(getBaseContext().getString(R.string.uri_authority), null);
+        //filter.addDataPath(getBaseContext().getString(R.string.uri_path), PatternMatcher.PATTERN_LITERAL);
+        registerReceiver(broadcastReceiver, filter);
+
+        return mBinder;
     }
 
     @Override
     public void onDestroy() {
 
         Log.i(TAG, "Service onDestroy");
+        unregisterReceiver(broadcastReceiver);
         isRunning = false;
+
         super.onDestroy();
     }
 }
