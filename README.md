@@ -1,13 +1,11 @@
 ## USSDParser
 This application gets the USSD text responses from a given number
 
-**Note: **
-Compatibility with Android 2.3 - 4.2.1 because Mr. Google drops supports of USSD api in later versions.
-
 ###Description
-After 2 weeks of research, I've found 2 solutions for intercept the USSD text  listed below.
+After 2 weeks of research, I've found 2 solutions for intercept the USSD text  listed below. Compatibility with Android 2.3 - 4.2.1 because Mr. Google drops supports of USSD api in later versions.
 
 **Solutions:**
+
 1. Extend the service IExtendedNetworkService and intercept the USSD text
 2. Read the logcat of the phone and search the USSD text then parse it
 
@@ -32,11 +30,9 @@ Good luck!
 
 [click here]:https://github.com/serpel/USSDParser/issues
 
-Fork it
-Create your feature branch (git checkout -b my-new-feature)
+### Fork it
 
-Commit your changes (git commit -am 'Add some feature')
-
-Push to the branch (git push origin my-new-feature)
-
-Create a new Pull Request
+- Create your feature branch (git checkout -b my-new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create a new Pull Request
