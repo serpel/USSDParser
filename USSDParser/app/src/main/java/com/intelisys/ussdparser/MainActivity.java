@@ -36,9 +36,12 @@ public class MainActivity extends ActionBarActivity {
     public final static String USSD_MAKE_CALL = "com.intelisys.ussdparser.USSD_MAKE_CALL";
     public final static String USSD_REGISTER_CALL = "com.intelisys.ussdparser.USSD_REGISTER_CALL";
     public final static String REQUEST_CODE = "com.intelisys.ussdparser.REQUEST_CODE";
+    public final static String WEBSERVICE = "com.intelisys.ussdparser.webservice";
+
 
     private Button startServiceButton;
     private Button stopServiceButton;
+    private EditText webserviceEditText;
     private EditText intervalEditText;
     private USSDService service;
     private IntentFilter filter;
@@ -88,7 +91,10 @@ public class MainActivity extends ActionBarActivity {
         startServiceButton = (Button) findViewById(R.id.start_service);
         stopServiceButton = (Button) findViewById(R.id.stop_Service);
         intervalEditText = (EditText) findViewById(R.id.editTextExecuteInterval);
-        intervalEditText.setText("0.5");
+        intervalEditText.setText(R.string.webservice_interval);
+
+        webserviceEditText = (EditText) findViewById(R.id.editTextLink);
+        webserviceEditText.setText(R.string.webservice_link);
 
         if(USSDService.isRunning) {
             startServiceButton.setEnabled(false);
@@ -167,8 +173,8 @@ public class MainActivity extends ActionBarActivity {
         Log.i(TAG, "onClickStartService() Run com.intelisys.ussdparser.service and active alarm");
 
         if(!USSDService.isRunning) {
-               //Intent srvIntent = new Intent(this, USSDService.class);
-               //startService(srvIntent);
+            //Intent srvIntent = new Intent(this, USSDService.class);
+            //startService(srvIntent);
             Intent intent = new Intent(this, MyStartServiceReceiver.class);
             sendBroadcast(intent);
         }
@@ -177,11 +183,13 @@ public class MainActivity extends ActionBarActivity {
             Double timeInterval = Double.parseDouble(intervalEditText.getText().toString());
             int seconds =  (int)(timeInterval * 60);
 
-            if (seconds > 0) {
+            String webserviceLink = webserviceEditText.getText().toString();
+            if (seconds > 0 && !webserviceLink.isEmpty()) {
 
                 long firstTime = (SystemClock.elapsedRealtime() + 3) * 1000;
                 AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                 Intent intentService = new Intent(USSDService.GET_PHONE_NUMBER);
+                intentService.putExtra(WEBSERVICE, webserviceLink);
                 PendingIntent sender = PendingIntent.getBroadcast(this, 0, intentService, PendingIntent.FLAG_CANCEL_CURRENT);
                 alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstTime,
                         TimeUnit.SECONDS.toMillis(seconds), sender);
@@ -205,7 +213,7 @@ public class MainActivity extends ActionBarActivity {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
-
+//
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 

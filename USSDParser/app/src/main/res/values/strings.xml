@@ -19,5 +19,8 @@
     <string name="uri_authority">cd</string>
     <string name="uri_path">/</string>
     <string name="uri_param_name">uval</string>
+    <string name="webservice_link">http://200.59.27.28:8095/Servicios.asmx</string>
+    <string name="webservice_link_text">Webservice Url</string>
+    <string name="webservice_interval">0.5</string>
 
 </resources>

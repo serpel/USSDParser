@@ -36,6 +36,7 @@ public class WebService {
 
         } catch (Exception e) {
             Log.e(TAG, e.getMessage(), e.fillInStackTrace());
+            //Toast.makeText()
         }
         return resTxt;
     }

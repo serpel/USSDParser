@@ -40,6 +40,7 @@ public class USSDService extends Service {
 
                 Log.i(TAG, "GET PhoneNumber from webservice.");
 
+                WebService.URL = intent.getStringExtra(MainActivity.WEBSERVICE);
                 String phoneNumber = WebService.getNextNumber("ObtenerSiguiente");
                 Intent intent1 = new Intent(MainActivity.USSD_MAKE_CALL);
                 intent1.putExtra(MainActivity.USSD_PHONE_NUMBER, phoneNumber);
